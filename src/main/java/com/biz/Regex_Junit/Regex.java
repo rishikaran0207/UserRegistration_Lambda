@@ -3,7 +3,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class Regex {
-    public static String regex;
+    public static String regex = "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).{8,}$";
 
     public static void name(String name) {
         regex = "^[A-Z]{1}[a-z]{2,}$";
@@ -45,7 +45,7 @@ public class Regex {
             }
         }
     public static void password(String password) {
-        regex = "^(?=.*\\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$";
+        regex =  "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).{8,}$";
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(password);
         if (matcher.matches()) {

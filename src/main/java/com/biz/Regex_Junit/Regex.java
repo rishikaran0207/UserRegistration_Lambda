@@ -15,6 +15,8 @@ public class Regex {
             System.out.println("\nYour name is not in format.");
             if (name.equals(User.first_name)) {
                 User.firstname();
+            } else if (name.equals(User.last_name)) {
+                User.lastname();
             }
         }
     }

@@ -2,13 +2,14 @@ package com.biz.Regex_Junit;
 import java.util.Scanner;
 public class User {
     public static Scanner scan = new Scanner(System.in);
-    public static String first_name,last_name,mail_ID;
+    public static String first_name,last_name,mail_ID,phone_number;
 
     public static void main(String[] args) {
         User details = new User();
         details.firstname();
         details.lastname();
         details.mail();
+        details.phonenumber();
 
     }
 
@@ -29,6 +30,10 @@ public class User {
         mail_ID = scan.next();
         Regex.mail(mail_ID);
     }
-
+    public static void phonenumber() {
+        System.out.println("\nEnter the phone number with country code and leave gap between them (E.g:91 9876543210):");
+        phone_number = scan.nextLine();
+        Regex.phonenumber(phone_number);
+    }
 }
 

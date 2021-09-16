@@ -2,7 +2,7 @@ package com.biz.Regex_Junit;
 import java.util.Scanner;
 public class User {
     public static Scanner scan = new Scanner(System.in);
-    public static String first_name,last_name,mail_ID,phone_number;
+    public static String first_name,last_name,mail_ID,phone_number,password;
 
     public static void main(String[] args) {
         User details = new User();
@@ -10,6 +10,7 @@ public class User {
         details.lastname();
         details.mail();
         details.phonenumber();
+        details.password();
 
     }
 
@@ -34,6 +35,12 @@ public class User {
         System.out.println("\nEnter the phone number with country code and leave gap between them (E.g:91 9876543210):");
         phone_number = scan.nextLine();
         Regex.phonenumber(phone_number);
+    }
+    public static void password() {
+        System.out.println("\n Enter the password with following rules");
+        System.out.println("\n minimum of  8 characters");
+        password = scan.nextLine();
+        Regex.password(password);
     }
 }
 

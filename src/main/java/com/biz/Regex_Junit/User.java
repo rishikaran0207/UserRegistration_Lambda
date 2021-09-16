@@ -38,7 +38,7 @@ public class User {
     }
     public static void Password() {
         System.out.println("\n Enter the password with following rules");
-        System.out.println("\n minimum of 8 characters \n one UpperCase \n one numerical:");
+        System.out.println("\n minimum of 8 characters \n one UpperCase \n one Numerical\n One Special Char:");
         password = scan.nextLine();
         Regex.password(password);
     }

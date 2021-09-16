@@ -10,7 +10,7 @@ public class User {
         details.lastname();
         details.mail();
         details.phonenumber();
-        details.password();
+        details.Password();
 
     }
 
@@ -36,9 +36,9 @@ public class User {
         phone_number = scan.nextLine();
         Regex.phonenumber(phone_number);
     }
-    public static void password() {
+    public static void Password() {
         System.out.println("\n Enter the password with following rules");
-        System.out.println("\n minimum of  8 characters");
+        System.out.println("\n minimum of 8 characters \n one UpperCase");
         password = scan.nextLine();
         Regex.password(password);
     }

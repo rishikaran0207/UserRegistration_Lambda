@@ -6,10 +6,10 @@ public class User {
 
     public static void main(String[] args) {
         User details = new User();
-//        details.firstname();
-//        details.lastname();
-//        details.mail();
-//        details.phonenumber();
+        details.firstname();
+        details.lastname();
+        details.mail();
+        details.phonenumber();
         details.Password();
 
     }

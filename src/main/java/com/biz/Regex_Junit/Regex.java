@@ -44,8 +44,9 @@ public class Regex {
                 User.phonenumber();
             }
         }
+
     public static void password(String password) {
-        regex =  "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*+=])(?=\\s+$).{8,}$";
+        regex = "^(?=.*[!@#$%^&*+=])(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=\\S+$).{8,}$";
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(password);
         if (matcher.matches()) {
